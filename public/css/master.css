@@ -1,0 +1,125 @@
+html, body {
+    background-color: #252020;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;    
+}
+
+p {
+    font-weight: 100;
+    line-height: 1.6rem;
+    letter-spacing: 0.06rem;
+}
+
+.hero {
+    background: url(/images/daisy.jpg) center / cover;
+    z-index: 0;
+    mix-blend-mode: color-dodge;
+    filter: grayscale(10%);
+}
+
+.title {
+    color: white;
+    font-weight: 100;
+    font-size: 5rem;
+    letter-spacing: 0.0166667em;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px black,
+                3px 4px 5px black;
+}
+
+.subtitle {
+    font-weight: 300;
+}
+
+.navbar {
+    width: 100%;
+    position: absolute;
+    background-color: transparent;
+}
+
+.navbar-item{
+    font-family: 'Lato', sans-serif;  
+    font-weight: 300;          
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+a.navbar-item:hover {
+    background-color: transparent;
+    color: yellow;
+}
+
+.centered {
+    margin: 0 auto;
+}
+
+.verticle-center {
+    top: 50%;
+    transform: (-50%, -50%);
+}
+
+.fancy-bottom-border {
+    border-bottom: 2px solid white;
+    box-shadow: 0px 2px 0px black;
+}
+
+#photos {
+    line-height: 25px;
+
+    -webkit-column-count: 3;
+    -webkit-column-gap:   6px;
+    -moz-column-count:    3;
+    -moz-column-gap:      6px;
+    column-count:         3;
+    column-gap:           6px;
+}
+
+#photos img {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.about-img {
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px black,
+                3px 4px 5px black;
+}
+
+.contact-form .label {
+    font-weight: 300;
+    color: white;
+}
+
+
+@media (max-width: 1000px) {
+    #photos {
+        -moz-column-count:    2;
+        -webkit-column-count: 2;
+        column-count:         2;
+    }
+}
+
+@media (max-width: 661px) {
+    #photos {
+        -moz-column-count:    1;
+        -webkit-column-count: 1;
+        column-count:         1;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 375px){
+    .title {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1087px){
+    .navbar-menu {
+        background-color: #1d1919;
+    }
+}

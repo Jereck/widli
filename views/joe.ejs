@@ -1,0 +1,23 @@
+<% include partials/header %>
+
+<section class="section header">
+    <div class="container has-text-centered">
+        <h1 class="title has-text-white">Widli Photography</h1>
+    </div>
+</section>
+
+<section class="section" id="photos">
+    <% if (files) { %>
+        <% files.forEach(function(file) { %>
+            <% if (file.metadata === "joe") { %>
+                <div>
+                    <img src="image/<%= file.filename %>">
+                </div>
+            <% } %>
+        <% }) %>
+    <% } else { %>
+        <p>No images to show</p>
+    <% } %>
+</section>
+
+<% include partials/footer %>
